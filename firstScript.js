@@ -1,4 +1,4 @@
-var FirstScript = (function () {
+var FirstScript = /** @class */ (function () {
     function FirstScript() {
     }
     FirstScript.addToStorage = function (abtn, rbtn, key, value) {
@@ -16,7 +16,6 @@ var FirstScript = (function () {
         sessionStorage.removeItem(key);
     };
     FirstScript.checkStorage = function () {
-        console.log("BUtton 1");
         if (sessionStorage.length != 0) {
             if (sessionStorage.getItem('item1') == "Website Development+60000") {
                 this.addbtn = document.getElementById('addbtn1');
@@ -39,4 +38,4 @@ var FirstScript = (function () {
         }
     };
     return FirstScript;
-})();
+}());
